@@ -5,3 +5,8 @@
 3) Create '.env' file and add "OPENAI_API_KEY = 'your_api_key'"
 4) create virtual environment and install dependencies
 5) start chat.py file
+
+
+TODO: 
+* voice synthesizing
+* character appearance
