@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат с AI</title>
+    <link rel="stylesheet" href="static/css/styles.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+    <!-- Кнопка для переключения темы -->
+    <button id="theme-toggle" onclick="toggleTheme()">🌙</button>
+    
+    <h1>Чат с AI</h1> <!-- Заголовок страницы -->
+
+    <!-- Контейнер окна чата -->
+    <div id="chat-container">
+        <div id="chat-window"></div>
+        <input type="text" id="user-input" placeholder="Введите сообщение...">
+        <button onclick="sendMessage()">Отправить</button>
+        <button onmousedown="startRecording()" onmouseup="stopRecording()">Запись аудио</button>
+    </div>
+
+    <!-- Кнопка для открытия/закрытия чата -->
+    <button id="chat-toggle-btn" onclick="toggleChat()">💬</button>
+
+    <!-- Подключение JavaScript файлов -->
+    <script src="static/js/index.js"></script>
+    <script src="static/js/toggle_chat_window.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
 import io
 import wave
 import numpy as np
-from gen_ai_logic.answer_back import convert_audio_to_text
+from ..gen_ai_logic.answer_back import convert_audio_to_text
 
 sample_rate = 44100
 

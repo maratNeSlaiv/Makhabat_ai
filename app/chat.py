@@ -2,9 +2,9 @@ import tkinter as tk
 import threading
 import time
 import sounddevice as sd
-from gen_ai_logic.answer_back import ask_openai
-from sounding.voice_the_text import play_audio, voice_the_text
-from audio_utils.convertions import get_text_from_audio
+from .gen_ai_logic.answer_back import ask_openai
+from .sounding.voice_the_text import play_audio, voice_the_text
+from .audio_utils.convertions import get_text_from_audio
 
 recording = None
 is_recording = False
