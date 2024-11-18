@@ -8,7 +8,7 @@
 6) check the webserver
 
 
-TODO: 
+a LOT TODO: 
 * voice synthesizing
 * character appearance
 * more frontend
