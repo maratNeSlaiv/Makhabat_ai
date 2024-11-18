@@ -1,0 +1,109 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Centered main content */
+.main-content {
+    text-align: center;
+    margin-top: -550px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* Chat button styling */
+#chat-toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+#chat-toggle-button:hover {
+    background-color: #72ea8c;
+}
+
+/* Chat window styling */
+#chat-window {
+    position: relative;
+    bottom: 0%;   /* Position it at the bottom of the screen */
+    right: -60%;  /* Start off-screen */
+    width: 50%;
+    height: 80%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    transition: right 0.3s ease;  /* Smooth transition for the 'right' property */
+}
+
+#chat-window.show {
+    right: -7%;  /* Position the window to the right when toggled */
+}
+
+#chat-text-input{
+    position: absolute;
+    bottom: 3%;
+    left:10px;
+    width: 90%;
+    min-height: 40px;
+    max-height: 120px; /* Set a maximum height for 5 lines */
+    box-sizing: border-box;
+    resize: none; /* Prevent manual resizing */
+    padding: 10px;
+    font-size: 16px;
+    overflow-y: auto; /* Show scrollbar when the content exceeds max-height */
+}
+
+#record-audio-button {
+    position: absolute;
+    bottom: 15%;
+    right: 10px;
+    width: 7%; /* Set the width of the button */
+    height: 7%; /* Set the height of the button */
+    background-image: url('../logos/record_audio_logo.jpeg'); /* Path to your local logo */
+    background-size: contain; /* Ensure the image scales proportionally to fit */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image inside the button */
+    cursor: pointer;
+}
+
+#record-audio-button.recording {
+    width: 10%;
+    height: 10%;
+}
+
+#send-message-button {
+    position: absolute;
+    bottom: 3%;
+    right: 10px;
+    width: 7%; /* Set the width of the button */
+    height: 7%; /* Set the height of the button */
+    background-image: url('../logos/send_button.png'); /* Path to your local logo */
+    background-size: contain; /* Ensure the image scales proportionally to fit */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image inside the button */
+    cursor: pointer;
+}
